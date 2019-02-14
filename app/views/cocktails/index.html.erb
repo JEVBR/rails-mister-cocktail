@@ -1,0 +1,13 @@
+<!--index.html.erb -->
+<H1>Cocktails</H1>
+<% @cocktails.each do |cocktail| %>
+  <H2>
+
+    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </H2>
+  <p>
+    <%= link_to "remove cocktail", cocktail_path(cocktail), method: :delete %>
+    <%= link_to "add cocktail", new_cocktail_path, method: :get %>
+</p>
+
+<% end %>
