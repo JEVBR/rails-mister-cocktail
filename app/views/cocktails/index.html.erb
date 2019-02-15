@@ -1,13 +1,34 @@
 <!--index.html.erb -->
-<H1>Cocktails</H1>
-<% @cocktails.each do |cocktail| %>
-  <H2>
+<p id="notice"><%= notice %></p>
+<div class = "container">
+  <div class="bg">
+    <table>
+      <!--NAVBAR -->
+      <thead>
+        <div class="navbar">
+      </thead>
 
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  </H2>
-  <p>
-    <%= link_to "remove cocktail", cocktail_path(cocktail), method: :delete %>
-    <%= link_to "add cocktail", new_cocktail_path, method: :get %>
-</p>
+      <!--MAIN -->
+      <tbody>
+        <% @cocktails.each do |cocktail| %>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <%= image_tag "img_lights.jpg", alt: "lights", width: 200 %>
 
-<% end %>
+          <H2>
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          </H2>
+          <p>
+            <%= link_to "remove cocktail", cocktail_path(cocktail), method: :delete %>
+            <%= link_to "add cocktail", new_cocktail_path, method: :get %>
+          </p>
+
+          </div>
+
+        <% end %>
+
+        <!--FOOTER -->
+      </tbody>
+      </div>
+    </table>
+  </div>
+</div>

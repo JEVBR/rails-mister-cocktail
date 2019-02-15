@@ -1,1 +1,16 @@
-// Specific CSS for your home-page
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: asset-url('background.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+
+}// Specific CSS for your home-page
+

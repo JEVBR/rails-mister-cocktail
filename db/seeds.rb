@@ -11,9 +11,13 @@ Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "pe de galinha")
 
 
-Cocktail.create(name: "breja")
 
-Cocktail.create(name: "breja2")
+Cocktail.create(name: "jajajajaj")
+Cocktail.create(name: "sadsd")
+Cocktail.create(name: "sadfasdsd")
+Cocktail.create(name: "batida de maracuja")
+Cocktail.create(name: "calasnickof")
+Cocktail.create(name: "cuba libre")
 
 Dose.create(description: "dsfsdf")
 Dose.create(description: "sdf")
